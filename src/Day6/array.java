@@ -43,18 +43,18 @@ import java.util.Scanner;
 public class array{
     public static void main(String[] args) {
 
-        //int[] names = new int[4];
-
         Scanner sc = new Scanner(System.in);
-        int size = sc.nextInt();
-        int[] nums = new int[size];
 
-        for(int i=0; i<size; i++){
-            nums[i] = sc.nextInt();
-        }
+            int size = sc.nextInt();
+            int arr[] = new int[size];
 
-        for(int i=0; i<nums.length; i++){
-            System.out.println(nums[i]);
+            //INPUT
+            for(int i=0; i<size; i++){
+                arr[i] = sc.nextInt();
+            }
+            //OUTPUT
+            for(int i=0; i<size; i++){
+                System.out.print(arr[i] + " ");
+            }
         }
     }
-}
